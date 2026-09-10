@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+    <meta charset="utf-8">
+    <meta name="discription" content="من سيربح المليون ">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .body{
+            background-color: rgb(63, 38, 63);
+            height: 100vh;
+            align-items: center;
+
+        }
+        .div{
+            align-items: center;
+            height: 100vh;
+        }
+        section{
+            height: 100hv;
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        li {
+            list-style: none;
+        }
+        a{
+            align-items: center;
+            color: aliceblue;
+            background-color: rgb(93, 55, 100);
+            padding: 20px 30px;
+            margin: 10px 7px;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: large;
+            font-weight: 500;
+            transition: 0.5s;
+            width: 100px;
+            position: relative;
+            z-index:10;
+
+
+        }
+        ul li a:hover{
+            transform: scale(1.5);
+            background-color: rgb(3, 3, 88);
+            opacity:1;
+
+        }
+        ul:hover a{
+            opacity: 0;
+        }
+        li::after{
+            color: beige;
+            font-family: system-ui;
+            content:attr(data-text);
+            position: absolute;
+            left: 39%;
+            top: 35%;
+          text-transform: uppercase;
+            font-weight: 900;
+            font-size: 80px;
+            opacity: 0;
+            transition: 0.5s;
+             letter-spacing: 50px;
+             pointer-events: none;
+        }
+        ul li:hover::after{
+            opacity: 0.5;
+            letter-spacing: 5px;
+        }
+       
+    </style>
+    </head>
+    <body class="body">
+        <div class="div">
+            <section>
+        <ul>
+            <li data-text="level 1"><a href="qst1.html">المرحلة الاولى</a></li>
+            <li  ><a>المرحلة الثانية</a></li>
+            <li  ><a >المرحلة الثالثة</a></li>
+            <li  ><a >المرحلة الرابعة</a></li>
+           
+            </ul>
+        </section>
+        </div>
+    </body>
